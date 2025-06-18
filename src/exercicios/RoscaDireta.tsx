@@ -51,18 +51,18 @@ export default function RoscaDiretaScreen() {
       }
       try {
         setModalVisible(false);
-        // 1) Recupera token
+        
         const token = await AsyncStorage.getItem('token');
         if (!token) throw new Error('Token não encontrado');
-        // 2) Configura o axios
+        
         setAuthToken(token);
-        // 3) Envia ao backend
+        
         await apiClient.post(api.historico, {
           exercicioId: EXERCISE_ID,
           performedSeries: parseInt(series, 10),
           performedReps: parseInt(reps, 10),
         });
-        // 4) Feedback e navegação
+       
         Toast.show({
           type: 'success',
           text1: 'Concluído',
