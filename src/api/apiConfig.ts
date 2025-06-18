@@ -1,7 +1,7 @@
 // src/api/apiConfig.ts
 import axios from 'axios';
 
-export const BASE_URL = 'http://192.168.68.55:3333';
+export const BASE_URL = 'http://192.168.1.14:3333';
 
 export const api = {
   cadastro:          '/auth/cadastrar',
