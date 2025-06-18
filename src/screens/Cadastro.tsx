@@ -33,7 +33,6 @@ export default function Cadastro({ navigation }: any) {
       });
       return;
     }
-
     if (senha !== confirmarSenha) {
       Toast.show({
         type: 'error',
