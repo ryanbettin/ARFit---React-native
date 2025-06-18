@@ -60,6 +60,7 @@ export default function Navbar() {
         },
       })}
     >
+
       <Tab.Screen name="Grupos" component={HomeScreen} />
       <Tab.Screen name="Histórico" component={Historico} />
       <Tab.Screen name="Metas" component={Metas} />
