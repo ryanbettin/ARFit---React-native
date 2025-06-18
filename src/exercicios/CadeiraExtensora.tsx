@@ -18,7 +18,6 @@ import { apiClient, api, setAuthToken } from '../api/apiConfig';
 
 // @ts-ignore
 import exerciseImage from '../../assets/treinos/CadeiraExtensora.png';
-
 const PRIMARY_COLOR = '#0776A0';
 const BACKGROUND = '#FFFFFF';
 const EXERCISE_ID = 3;
