@@ -95,7 +95,6 @@ export default function Historico() {
       </SafeAreaView>
     );
   }
-
   if (sections.length === 0) {
     return (
       <SafeAreaView style={styles.emptyContainer}>
