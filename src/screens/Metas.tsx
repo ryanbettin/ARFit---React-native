@@ -46,20 +46,20 @@ export default function MetasScreen() {
   const insets = useSafeAreaInsets();
   const isFocused = useIsFocused();
 
-  // Dados
+  
   const [loading, setLoading] = useState(true);
   const [metas, setMetas] = useState<Meta[]>([]);
   const [historico, setHistorico] = useState<HistoricoEntry[]>([]);
   const [exercicios, setExercicios] = useState<Exercicio[]>([]);
 
-  // Criação de meta
+
   const [showCreate, setShowCreate] = useState(false);
   const [nomeMeta, setNomeMeta] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedIds, setSelectedIds] = useState<number[]>([]);
   const [targets, setTargets] = useState<Record<number, { series: string; reps: string; peso: string }>>({});
 
-  // Visualização de meta
+ 
   const [activeMeta, setActiveMeta] = useState<Meta | null>(null);
 
   const configureAuth = useCallback(async () => {
