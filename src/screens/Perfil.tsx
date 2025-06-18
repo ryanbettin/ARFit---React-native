@@ -29,7 +29,7 @@ export default function Perfil({ navigation }: any) {
   const [usuario, setUsuario] = useState<Usuario | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // stats
+
   const [totalExercises, setTotalExercises] = useState(0);
   const [totalReps, setTotalReps] = useState(0);
   const [totalMetasDone, setTotalMetasDone] = useState(0);
