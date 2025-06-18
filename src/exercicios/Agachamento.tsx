@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-import {
-  SafeAreaView,
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-  Modal,
-  TextInput,
-  Platform
-} from 'react-native';
+import {SafeAreaView,View,Text,StyleSheet,Image,TouchableOpacity,Modal,TextInput, Platform} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';// @ts-ignore
 import Ionicons from 'react-native-vector-icons/Ionicons';
