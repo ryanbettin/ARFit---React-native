@@ -71,7 +71,6 @@ export default function HomeScreen() {
       </SafeAreaView>
     );
   }
-
   return (
     <SafeAreaView style={styles.wrapper}>
       {/* Header */}
