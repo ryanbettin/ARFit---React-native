@@ -14,7 +14,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { apiClient, api, setAuthToken } from '../api/apiConfig';
 import Toast from 'react-native-toast-message';
 
-// Logo refletindo o caminho correto em artfit/src/screens
+
 // @ts-ignore
 import logo from '../../assets/logo.png';
 
@@ -50,7 +50,6 @@ export default function Login({ navigation }: any) {
       });
     }
   };
-
   return (
     <KeyboardAvoidingView
       style={styles.wrapper}
