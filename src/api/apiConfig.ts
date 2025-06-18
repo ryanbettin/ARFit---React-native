@@ -1,4 +1,3 @@
-// src/api/apiConfig.ts
 import axios from 'axios';
 
 export const BASE_URL = 'http://192.168.1.14:3333';
@@ -10,7 +9,7 @@ export const api = {
   exerciciosPorGrupo:(id: number) => `/grupos/${id}/exercicios`,
   historico:         '/historico',
   metas:             '/metas',
-  usuario:           '/usuario',  // rota para obter perfil do usuário autenticado
+  usuario:           '/usuario',  
 };
 
 export const apiClient = axios.create({
@@ -18,7 +17,7 @@ export const apiClient = axios.create({
   timeout: 5000,
 });
 
-// Chame setAuthToken(token) logo após o login para injetar o header
+
 export function setAuthToken(token: string) {
   apiClient.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 }
